@@ -1,0 +1,1 @@
+ssh gavin@$(aws ec2 describe-instances --instance-ids $1 --region $2 | jq -r '.Reservations[0].Instances[0].NetworkInterfaces[0].PrivateIpAddress')
