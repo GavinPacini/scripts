@@ -1,3 +1,8 @@
+#Usage:
+#First param is either "up" or "down". This decides if we are syncing "up" or "down"
+#Second param is the region e.g. eu-west-1
+#Does not catch errors
+
 DIR=$(basename "$PWD")
 echo $DIR
 if [ "$1" == "up" ]; then
